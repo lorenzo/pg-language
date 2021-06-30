@@ -4,8 +4,8 @@
 
 #ifndef LANG_REV_H
 #define LANG_REV_H
-#include "language.h"
-static inline language_code
+#include "spoken_lang.h"
+static inline spoken_lang_code
 lang_from_str(const char *str)
 {
     switch (str[0] << 8 | str[1])
@@ -195,7 +195,7 @@ lang_from_str(const char *str)
         case ('z' << 8 | 'h'): return 183;
         case ('z' << 8 | 'u'): return 184;
         case ('z' << 8 | 'z'): return 185;
-    default: elog(ERROR, "unknown language type: %s", str);
+    default: elog(ERROR, "unknown spoken_lang type: %s", str);
     }
 };
 #endif

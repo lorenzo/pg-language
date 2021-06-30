@@ -1,21 +1,21 @@
-SELECT 'ts' :: language <  'tt' :: language;
+SELECT 'ts' :: spoken_spoken_lang <  'tt' :: spoken_spoken_lang;
 
-SELECT 'ts' :: language <= 'tt' :: language;
+SELECT 'ts' :: spoken_spoken_lang <= 'tt' :: spoken_spoken_lang;
 
-SELECT 'ts' :: language >  'tt' :: language;
+SELECT 'ts' :: spoken_spoken_lang >  'tt' :: spoken_spoken_lang;
 
-SELECT 'tt' :: language >  'ts' :: language;
+SELECT 'tt' :: spoken_spoken_lang >  'ts' :: spoken_spoken_lang;
 
-SELECT 'tt' :: language >= 'ts' :: language;
+SELECT 'tt' :: spoken_spoken_lang >= 'ts' :: spoken_spoken_lang;
 
-SELECT 'tt' :: language >  'tt' :: language;
+SELECT 'tt' :: spoken_spoken_lang >  'tt' :: spoken_spoken_lang;
 
-SELECT 'tt' :: language >= 'tt' :: language;
+SELECT 'tt' :: spoken_spoken_lang >= 'tt' :: spoken_spoken_lang;
 
-SELECT 'tt' :: language =  'ts' :: language;
+SELECT 'tt' :: spoken_spoken_lang =  'ts' :: spoken_spoken_lang;
 
-SELECT 'tt' :: language != 'ts' :: language;
+SELECT 'tt' :: spoken_spoken_lang != 'ts' :: spoken_spoken_lang;
 
-SELECT 'tt' :: language != 'tt' :: language;
+SELECT 'tt' :: spoken_spoken_lang != 'tt' :: spoken_spoken_lang;
 
-SELECT 'tt' :: language =  'tt' :: language;
+SELECT 'tt' :: spoken_spoken_lang =  'tt' :: spoken_spoken_lang;

@@ -1,64 +1,64 @@
-SELECT 'ts' :: language <  'tt' :: language;
+SELECT 'ts' :: spoken_lang <  'tt' :: spoken_lang;
  ?column? 
 ----------
  t
 (1 row)
 
-SELECT 'ts' :: language <= 'tt' :: language;
+SELECT 'ts' :: spoken_lang <= 'tt' :: spoken_lang;
  ?column? 
 ----------
  t
 (1 row)
 
-SELECT 'ts' :: language >  'tt' :: language;
+SELECT 'ts' :: spoken_lang >  'tt' :: spoken_lang;
  ?column? 
 ----------
  f
 (1 row)
 
-SELECT 'tt' :: language >  'ts' :: language;
+SELECT 'tt' :: spoken_lang >  'ts' :: spoken_lang;
  ?column? 
 ----------
  t
 (1 row)
 
-SELECT 'tt' :: language >= 'ts' :: language;
+SELECT 'tt' :: spoken_lang >= 'ts' :: spoken_lang;
  ?column? 
 ----------
  t
 (1 row)
 
-SELECT 'tt' :: language >  'tt' :: language;
+SELECT 'tt' :: spoken_lang >  'tt' :: spoken_lang;
  ?column? 
 ----------
  f
 (1 row)
 
-SELECT 'tt' :: language >= 'tt' :: language;
+SELECT 'tt' :: spoken_lang >= 'tt' :: spoken_lang;
  ?column? 
 ----------
  t
 (1 row)
 
-SELECT 'tt' :: language =  'ts' :: language;
+SELECT 'tt' :: spoken_lang =  'ts' :: spoken_lang;
  ?column? 
 ----------
  f
 (1 row)
 
-SELECT 'tt' :: language != 'ts' :: language;
+SELECT 'tt' :: spoken_lang != 'ts' :: spoken_lang;
  ?column? 
 ----------
  t
 (1 row)
 
-SELECT 'tt' :: language != 'tt' :: language;
+SELECT 'tt' :: spoken_lang != 'tt' :: spoken_lang;
  ?column? 
 ----------
  f
 (1 row)
 
-SELECT 'tt' :: language =  'tt' :: language;
+SELECT 'tt' :: spoken_lang =  'tt' :: spoken_lang;
  ?column? 
 ----------
  t

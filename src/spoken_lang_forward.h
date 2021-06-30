@@ -5,7 +5,7 @@
 #ifndef LANG_FWD_H
 #define LANG_FWD_H
 
-#include "language.h"
+#include "spoken_lang.h"
 
 static inline char *
 create_string(const char *chars)
@@ -17,7 +17,7 @@ create_string(const char *chars)
 }
 
 static inline char *
-language_to_str(language_code c)
+spoken_lang_to_str(spoken_lang_code c)
 {
     switch (c)
     {
@@ -206,7 +206,7 @@ language_to_str(language_code c)
         case 183: return create_string("zh");
         case 184: return create_string("zu");
         case 185: return create_string("zz");
-    default: elog(ERROR, "internal language representation unknown: %u", c);
+    default: elog(ERROR, "internal spoken_lang representation unknown: %u", c);
     }
 }
 #endif

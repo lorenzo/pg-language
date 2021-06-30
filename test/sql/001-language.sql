@@ -1,1 +1,1 @@
-SELECT * from supported_languages();
+SELECT * from supported_spoken_spoken_langs();

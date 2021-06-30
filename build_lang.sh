@@ -8,8 +8,8 @@ cat > $1 <<-EOF
 
 #ifndef LANG_REV_H
 #define LANG_REV_H
-#include "language.h"
-static inline language_code
+#include "spoken_lang.h"
+static inline spoken_lang_code
 lang_from_str(const char *str)
 {
     switch (str[0] << 8 | str[1])
@@ -17,7 +17,7 @@ lang_from_str(const char *str)
 EOF
     sort $2 | awk -f $3 >> $1
     cat >> $1 <<-EOF
-    default: elog(ERROR, "unknown language type: %s", str);
+    default: elog(ERROR, "unknown spoken_lang type: %s", str);
     }
 };
 #endif
@@ -32,7 +32,7 @@ elif [ $3 == src/lang_fwd.awk ]; then
 #ifndef LANG_FWD_H
 #define LANG_FWD_H
 
-#include "language.h"
+#include "spoken_lang.h"
 
 static inline char *
 create_string(const char *chars)
@@ -44,14 +44,14 @@ create_string(const char *chars)
 }
 
 static inline char *
-language_to_str(language_code c)
+spoken_lang_to_str(spoken_lang_code c)
 {
     switch (c)
     {
 EOF
     sort -k 3 -n $2 | awk -f $3 >> $1
     cat >> $1 <<-EOF
-    default: elog(ERROR, "internal language representation unknown: %u", c);
+    default: elog(ERROR, "internal spoken_lang representation unknown: %u", c);
     }
 }
 #endif

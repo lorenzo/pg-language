@@ -1,6 +1,6 @@
-SELECT * from supported_languages();
- supported_languages 
----------------------
+SELECT * from supported_spoken_langs();
+ supported_spoken_langs
+------------------------
  aa
  ab
  ae

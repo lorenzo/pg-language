@@ -1,39 +1,41 @@
 {
-   "name": "language",
+   "name": "spoken_lang",
    "abstract": "Enumerable type for languages",
-   "version": "0.0.4",
-   "maintainer": [ "Chris Travers <chris.travers@adjust.com>", "Manuel Kniep <rapimo@adjust.com>" ],
+   "version": "0.0.5",
+   "maintainer": [
+      "Chris Travers <chris.travers@adjust.com>",
+      "Manuel Kniep <rapimo@adjust.com>"
+   ],
    "license": {
       "PostgreSQL": "http://www.postgresql.org/about/licence"
    },
-   "provides": { 
+   "provides": {
       "language": {
-         "file": "sql/pg-language.sql",
-         "version": "0.0.4",
+         "file": "sql/pg-spoken_lang.sql",
+         "version": "0.0.5",
          "abstract": "Enumerable language.  Stored in one byte."
       }
    },
    "meta-spec": {
-     "version": "1.0.0",
-     "url": "http://pgxn.org/meta/spec.txt"
+      "version": "1.0.0",
+      "url": "http://pgxn.org/meta/spec.txt"
    },
    "description": "This extension offers a fixed-byte storage type that works as an enum for major languages.",
    "prereqs": {
       "runtime": {
-        "requires": {
-           "PostgreSQL": "9.3.0"
-        }
+         "requires": {
+            "PostgreSQL": "9.3.0"
+         }
       }
    },
    "resources": {
-       "bugtracker": {
-           "web": "http://github.com/adjust/pg-language/issues"
-       },
-       "repository": {
-          "url": "git://github.com/adjust/pg-language.git",
-          "web": "http://github.com/adjust/pg-language",
-          "type": "git"
-       }
+      "bugtracker": {
+         "web": "http://github.com/adjust/pg-language/issues"
+      },
+      "repository": {
+         "url": "git://github.com/adjust/pg-language.git",
+         "web": "http://github.com/adjust/pg-language",
+         "type": "git"
+      }
    }
 }
-
